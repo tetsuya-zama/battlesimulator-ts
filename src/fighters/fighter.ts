@@ -1,10 +1,33 @@
 import {IntValue, COMMAND, Fightable, CommandLog} from "../core";
 
+export interface FighterStatusData{
+  readonly name: string
+  readonly hp: number
+  readonly offence: number
+  readonly deffence: number
+}
+
+export const isFighterStatusData = (obj: any): obj is FighterStatusData =>{
+  return typeof obj.name === "string"
+    && typeof obj.hp === "number"
+    && typeof obj.offence === "number"
+    && typeof obj.deffence === "number";
+}
+
 export interface FighterStatus{
   readonly name: string
   readonly hp: IntValue
   readonly offence: IntValue
   readonly deffence: IntValue
+}
+
+export const parseFighterStatus = ({name, hp, offence, deffence}: FighterStatusData): FighterStatus =>{
+  return {
+    name,
+    hp:IntValue.of(hp),
+    offence: IntValue.of(offence),
+    deffence: IntValue.of(deffence)
+  };
 }
 
 export class Fighter implements Fightable{
