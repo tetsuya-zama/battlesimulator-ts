@@ -12,7 +12,7 @@ export class Fighter implements Fightable{
   private _hp: number
   private _offence: number
   private _deffence: number
-  private _currentCommand: COMMAND = COMMAND.ATTACK
+  protected _currentCommand: COMMAND = COMMAND.ATTACK
 
 
   get name(){
