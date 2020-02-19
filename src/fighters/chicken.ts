@@ -1,4 +1,4 @@
-import {Fighter,FighterStatus} from './';
+import {Fighter,FighterStatus} from './fighter';
 import {COMMAND} from '../core';
 
 export class Chicken extends Fighter{

@@ -1,4 +1,4 @@
-import {Fighter, FighterStatus} from '../../src/fighters';
+import {Fighter, FighterStatus} from '../../src/fighters/fighter';
 import {IntValue, COMMAND, CommandLog} from '../../src/core';
 
 describe("Fighter",()=>{
