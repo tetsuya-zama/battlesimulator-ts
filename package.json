@@ -6,7 +6,8 @@
   "scripts": {
     "exec": "node dist/index.js",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "doc": "typedoc"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "@types/node": "^13.7.4",
     "jest": "^25.1.0",
     "ts-jest": "^25.2.0",
+    "typedoc": "^0.16.10",
     "typescript": "^3.7.5"
   },
   "jest": {
