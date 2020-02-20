@@ -1,9 +1,9 @@
 import {Battle, IntValue} from './core';
-import {FighterCreationRequest, isFighterCreationRequest, createFighter} from './fighters';
+import {FightableCreationRequest, isFighterCreationRequest, createFighter} from './fighters';
 
 export interface BattleSimulatorSetting{
-  black: FighterCreationRequest
-  white: FighterCreationRequest
+  black: FightableCreationRequest
+  white: FightableCreationRequest
   maxTurn?: number
 }
 

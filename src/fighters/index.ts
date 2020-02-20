@@ -2,11 +2,11 @@ import {Fightable} from '../core';
 import {Fighter ,FighterStatusData, isFighterStatusData, parseFighterStatus} from './fighter';
 import {Chicken} from './chicken';
 
-export interface FighterCreationRequest extends FighterStatusData{
+export interface FightableCreationRequest extends FighterStatusData{
   __type: string
 }
 
-export const isFighterCreationRequest = (obj: any): obj is FighterCreationRequest => {
+export const isFighterCreationRequest = (obj: any): obj is FightableCreationRequest => {
   return typeof obj.__type === "string"
     && isFighterStatusData(obj);
 }
