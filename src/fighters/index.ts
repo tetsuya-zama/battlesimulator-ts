@@ -2,11 +2,11 @@ import {Fightable} from '../core';
 import {Fighter ,FighterStatusData, isFighterStatusData, parseFighterStatus} from './fighter';
 import {Chicken} from './chicken';
 
-interface FighterCreationRequest extends FighterStatusData{
+export interface FighterCreationRequest extends FighterStatusData{
   __type: string
 }
 
-const isFighterCreationRequest = (obj: any): obj is FighterCreationRequest => {
+export const isFighterCreationRequest = (obj: any): obj is FighterCreationRequest => {
   return typeof obj.__type === "string"
     && isFighterStatusData(obj);
 }
@@ -23,6 +23,6 @@ export const createFighter = (obj: any): Fightable =>{
         throw new Error(`Invalid type:${obj.__type}`);
     }
   }else{
-    throw new Error(`Invalid parameter: ${obj}`)
+    throw new Error(`Invalid parameter: ${JSON.stringify(obj)}`);
   }
 }

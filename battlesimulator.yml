@@ -1,0 +1,13 @@
+black:
+  __type: Fighter
+  name: ぶらっく
+  hp: 10
+  offence: 8
+  deffence: 5
+white:
+  __type: Fighter
+  name: ほわいと
+  hp: 9
+  offence: 9
+  deffence: 4
+maxTurn: 10

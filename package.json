@@ -4,6 +4,7 @@
   "description": "battle simulator for typescript",
   "main": "index.js",
   "scripts": {
+    "exec": "node dist/index.js",
     "build": "tsc",
     "test": "jest"
   },
@@ -11,23 +12,28 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.1.2",
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "^13.7.4",
     "jest": "^25.1.0",
     "ts-jest": "^25.2.0",
     "typescript": "^3.7.5"
   },
   "jest": {
-     "moduleFileExtensions": [
-       "ts",
-       "js"
-     ],
-     "transform": {
-       "^.+\\.ts$": "ts-jest"
-     },
-     "globals": {
-       "ts-jest": {
-         "tsConfig": "tsconfig.json"
-       }
-     },
-     "collectCoverage":true
-   }
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "collectCoverage": true
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
 }
