@@ -29,6 +29,7 @@ import Fs from 'fs';
 /**
 * このindex.jsがコマンドラインから実行された場合
 */
+/* istanbul ignore next */
 if(require.main === module){
       const yaml: typeof Yaml = require('js-yaml');
       const fs: typeof Fs = require('fs');
