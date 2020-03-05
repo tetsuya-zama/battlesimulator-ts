@@ -15,7 +15,7 @@
     "publish": "npm run test && npm run build && npm run doc",
     "walkthrough":"npm run publish && npm run exec"
   },
-  "author": "",
+  "author": "tetsuya-zama",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.1.2",
