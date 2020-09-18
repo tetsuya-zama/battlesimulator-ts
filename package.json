@@ -6,14 +6,14 @@
   "scripts": {
     "exec": "node dist/index.js",
     "build": "npm run build:clean && tsc",
-    "build:clean":"rimraf dist",
-    "build-exec":"npm run build && npm run exec",
+    "build:clean": "rimraf dist",
+    "build-exec": "npm run build && npm run exec",
     "test": "npm run test:clean && jest",
-    "test:clean":"rimraf coverage",
+    "test:clean": "rimraf coverage",
     "doc": "npm run doc:clean && typedoc",
     "doc:clean": "rimraf docs",
     "publish": "npm run test && npm run build && npm run doc",
-    "walkthrough":"npm run publish && npm run exec"
+    "walkthrough": "npm run publish && npm run exec"
   },
   "author": "tetsuya-zama",
   "license": "ISC",
